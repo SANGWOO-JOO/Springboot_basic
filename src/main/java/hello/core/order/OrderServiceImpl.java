@@ -1,15 +1,11 @@
 package hello.core.order;
 
 import hello.core.discount.DiscountPolicy;
-<<<<<<< HEAD
 
-=======
->>>>>>> 6f2fac68bd6aa1c7df72fbb35dc86f739381d290
 import hello.core.discount.FixDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
-<<<<<<< HEAD
 // Order서버스에 관련된 것만 해야된다.(Impl = 구현 클래스의 이름을 지을 때 인터페이스 이름을 접두사로 하고, Impl을 접미사로 하는 방식이 보편적)
 public class OrderServiceImpl implements OrderService {
 
@@ -29,16 +25,6 @@ public class OrderServiceImpl implements OrderService {
   //  private final DiscountPolicy discountPolicy =new FixDiscountPolicy();
     //새로운 할인 정책 설정
   //  private final DiscountPolicy discountPolicy =new RateDiscountPolicy();
-=======
-
-public class OrderServiceImpl implements OrderService {
-
-    //멤버 찾는 변수
-    private final MemberRepository memberRepository =new MemoryMemberRepository();
-    //고정 할인 정책
-    private final DiscountPolicy discountPolicy =new FixDiscountPolicy();
-
->>>>>>> 6f2fac68bd6aa1c7df72fbb35dc86f739381d290
     //주문 요청
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {

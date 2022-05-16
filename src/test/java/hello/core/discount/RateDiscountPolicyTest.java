@@ -32,7 +32,7 @@ class RateDiscountPolicyTest {
         Member member = new Member(1L, "memberVIP", Grade.BASIC);
         // when
         //멤버에게 10000원이란 금액을 넣으면?
-        int discount = discountPolicy.discount(member, 10000);
+        int discount = discountPolicy.discount(member, 20000);
         //then
         Assertions.assertThat(discount).isEqualTo(0);
     }

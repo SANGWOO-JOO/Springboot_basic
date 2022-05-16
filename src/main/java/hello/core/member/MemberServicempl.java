@@ -6,7 +6,6 @@ public class MemberServicempl implements MemberService{
     // MemoryMemberRepository 넣어주면 된다.
     // MemoryMemberRepository에서 save() 오버라이딩
     //cmd + shift +enter
-<<<<<<< HEAD
 
     private final MemberRepository memberRepository ;
 
@@ -14,9 +13,6 @@ public class MemberServicempl implements MemberService{
     public MemberServicempl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
-=======
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
->>>>>>> 6f2fac68bd6aa1c7df72fbb35dc86f739381d290
 
     @Override
     public void join(Member member) {

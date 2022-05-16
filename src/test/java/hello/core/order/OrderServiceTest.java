@@ -1,6 +1,5 @@
 package hello.core.order;
 
-<<<<<<< HEAD
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
@@ -23,19 +22,14 @@ public class OrderServiceTest {
     }
 
 
-    @Test
-    void createOrder(){
-        Long memberId =1L;
-        Member member =new Member(memberId, "memberA", Grade.VIP);
-        memberService.join(member);
+        @Test
+        void createOrder(){
+            Long memberId =1L;
+            Member member =new Member(memberId, "memberA", Grade.VIP);
+            memberService.join(member);
 
-        Order order =orderService.createOrder(memberId, "itemA", 10000);
-        Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
-        //(order.getDiscountPrice()).isEqualTo(1000)
+            Order order =orderService.createOrder(memberId, "itemA", 10000);
+            Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
+            //(order.getDiscountPrice()).isEqualTo(1000)
+        }
     }
-=======
-public class OrderServiceTest {
-
->>>>>>> 6f2fac68bd6aa1c7df72fbb35dc86f739381d290
-
-}
