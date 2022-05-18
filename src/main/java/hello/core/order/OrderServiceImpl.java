@@ -22,7 +22,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     //인터페이스에만 의존
-  //  private final DiscountPolicy discountPolicy =new FixDiscountPolicy();
+  //  private final DiscountPolicy discount.l  Policy =new FixDiscountPolicy();
     //새로운 할인 정책 설정
   //  private final DiscountPolicy discountPolicy =new RateDiscountPolicy();
     //주문 요청
